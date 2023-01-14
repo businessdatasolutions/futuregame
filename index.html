@@ -19,21 +19,18 @@
 	<body>
 		<div id="container">
 			<div class="row align-items-start m-3">
-				<div class="alert alert-primary" role="alert">
-					Push button for new set of cards
-				</div>
 				<button
 					type="button"
 					class="btn btn-info btn-lg mx-auto"
 					onclick="getRandomCards()"
 				>
-					Cards
+					New set
 				</button>
 			</div>
 			<div class="row align-items-start">
 				<div class="col">
 					<img
-						src="./cards/FTI_Cards-01.png"
+						src="./cards/FTI_Cards-02.png"
 						id="card-img1"
 						class="img-thumbnail"
 						alt="Responsive image"
@@ -41,7 +38,7 @@
 				</div>
 				<div class="col">
 					<img
-						src="./cards/FTI_Cards-02.png"
+						src="./cards/FTI_Cards-01.png"
 						id="card-img2"
 						class="img-thumbnail"
 						alt="Responsive image"
@@ -66,8 +63,8 @@
 				const r2 = Math.floor(Math.random() * 29) + 34;
 				const r3 = Math.floor(Math.random() * 29) + 64;
 				const p1 = r1 < 10 ? "0" : "";
-				img1.src = `./cards/FTI_Cards-${p1}${r1}.png`;
-				img2.src = `./cards/FTI_Cards-${r2}.png`;
+				img1.src = `./cards/FTI_Cards-${r2}.png`;
+				img2.src = `./cards/FTI_Cards-${p1}${r1}.png`;
 				img3.src = `./cards/FTI_Cards-${r3}.png`;
 				console.log(r1, r2, r3);
 			};
