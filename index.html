@@ -59,9 +59,9 @@
 			const img2 = document.getElementById("card-img2");
 			const img3 = document.getElementById("card-img3");
 			const getRandomCards = () => {
-				const r1 = Math.floor(Math.random() * 29) + 4;
-				const r2 = Math.floor(Math.random() * 29) + 34;
-				const r3 = Math.floor(Math.random() * 29) + 64;
+				const r1 = Math.floor(Math.random() * 30) + 4;
+				const r2 = Math.floor(Math.random() * 30) + 34;
+				const r3 = Math.floor(Math.random() * 30) + 64;
 				const p1 = r1 < 10 ? "0" : "";
 				img1.src = `./cards/FTI_Cards-${r2}.png`;
 				img2.src = `./cards/FTI_Cards-${p1}${r1}.png`;
